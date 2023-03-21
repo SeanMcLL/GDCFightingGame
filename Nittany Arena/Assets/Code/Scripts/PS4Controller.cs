@@ -47,7 +47,7 @@ public class PS4Controller : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             }
             if (Gamepad.all[0].buttonWest.wasPressedThisFrame) {
-                player.GetComponent<Character>().StartAttack(1);
+                player.GetComponent<Character>().StartAttack();
             }
         }  
     }

@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Input Data", menuName = "Fighting Game/Input Data")]
 public class InputData : ScriptableObject
 {
+    [System.Serializable]
     public struct FrameInputData
     {
         public Vector2 StickLeft, StickRight;
