@@ -1,4 +1,0 @@
-repository "GDCFightingGame@roguecoder@cloud"
-  path "/"
-    br "/main"
-    co "/main"
