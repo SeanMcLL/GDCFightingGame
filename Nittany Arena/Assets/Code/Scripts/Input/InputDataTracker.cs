@@ -31,5 +31,6 @@ public class InputDataTracker : MonoBehaviour
 
         m_PlayerData.PlayerControlsData.CurrentFrame.Jump = buttons[(int)ControlLayoutData.ButtonControls.Jump];
         m_PlayerData.PlayerControlsData.CurrentFrame.Attack = buttons[(int)ControlLayoutData.ButtonControls.Attack];
+        m_PlayerData.PlayerControlsData.CurrentFrame.Special = buttons[(int)ControlLayoutData.ButtonControls.Special];
     }
 }

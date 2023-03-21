@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     public PanelDisplay pd;
     //Components
     private Rigidbody2D m_rb;
+    private PlayerController m_pc;
     private PlayerData m_PlayerData;
     public Animator anim;
 
@@ -19,6 +20,7 @@ public class Character : MonoBehaviour
     public bool IsAttacking;
     public bool IsFacingRight;
     public AttackData CurrentAttackData;
+    public MovelistData MovelistData;
     public int AttackFrameCounter;
 
     public Transform spawnPoint;
@@ -130,13 +132,27 @@ public class Character : MonoBehaviour
         pd = GameObject.FindObjectOfType(typeof(PanelDisplay)) as PanelDisplay;
         anim = GetComponent<Animator>();
         m_rb = GetComponent<Rigidbody2D>();
+        m_pc = GetComponent<PlayerController>();
         m_PlayerData = GetComponent<PlayerData>();
     }
 
     void Update() {
         if (m_PlayerData.PlayerControlsData.CurrentFrame.Attack) {
+            //ALL ATTACKS
+            PlayerController.PlayerState playerState = m_pc.GetCurrentState();
+            if (playerState == PlayerController.PlayerState.Jump || playerState == PlayerController.PlayerState.Fall)
+            {
+                //Aerial Neutral
+                CurrentAttackData = MovelistData.NeutralAir;
+                Debug.Log("Neutral Air");
+            } else
+            {
+                //Basic Neutral
+                CurrentAttackData = MovelistData.NeutralRegular;
+                Debug.Log("Neutral Regular");
+            }
             Debug.Log("attack");
-            StartAttack(1);
+            StartAttack();
         }
         if (m_PlayerData.PlayerControlsData.CurrentFrame.Movement.x > 0) {
             IsFacingRight = true;
@@ -250,16 +266,9 @@ public class Character : MonoBehaviour
         m_rb.velocity = new Vector2(facingDir*vel.x, vel.y);
     }
 
-    public void StartAttack(int attackCode) {
+    public void StartAttack() {
         IsAttacking = true;
         AttackFrameCounter = 0;
-        /*
-        switch(attackCode) {
-            case 1:
-                anim.Play("Attack1");
-                break;
-        }
-        */
     }
 
     void OnTriggerEnter2D(Collider2D col) {

@@ -9,6 +9,7 @@ public class PlayerControlsData : ScriptableObject
 
         public bool Jump;
         public bool Attack;
+        public bool Special;
 
         public FrameInputData Copy()
         {
@@ -18,6 +19,7 @@ public class PlayerControlsData : ScriptableObject
 
             copy.Jump = Jump;
             copy.Attack = Attack;
+            copy.Special = Special;
 
             return copy;
         }

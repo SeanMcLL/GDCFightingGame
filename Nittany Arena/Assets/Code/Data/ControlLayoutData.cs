@@ -18,6 +18,7 @@ public class ControlLayoutData : ScriptableObject
 
         Jump,
         Attack,
+        Special,
 
         Count,
     }

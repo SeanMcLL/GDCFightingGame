@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour
 
     public Vector2 CurrentKnockbackSpeed = Vector2.zero;
 
+    public PlayerState GetCurrentState()
+    {
+        return m_CurrentState;
+    }
+
     private void Awake()
     {
         m_Controller = GetComponent<CharacterController2D>();
