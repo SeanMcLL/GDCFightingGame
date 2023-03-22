@@ -2626,13 +2626,8 @@ GameObject:
   - component: {fileID: 579383095}
   - component: {fileID: 579383099}
   - component: {fileID: 579383098}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   - component: {fileID: 579383097}
   - component: {fileID: 579383096}
-=======
-  - component: {fileID: 579383100}
-  - component: {fileID: 579383101}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_Layer: 7
   m_Name: Dummy
   m_TagString: Player
@@ -2640,85 +2635,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!114 &579383095
-=======
---- !u!95 &579383095
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579383094}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c41632bda9e0ee548aff6d7b680d211e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &579383096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579383094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797f0667d0b190544acb0781a26a4452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pd: {fileID: 252387651}
-  anim: {fileID: 0}
-  facingDir: 0
-  damage: 0
-  HurtboxLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  IsAttacking: 0
-  IsFacingRight: 0
-  CurrentAttackData: {fileID: 11400000, guid: a9cdcb13b024d654b81597dfdd10959b, type: 2}
-  MovelistData: {fileID: 11400000, guid: 84ab93ea72c436f4aa9f8966708d7680, type: 2}
-  AttackFrameCounter: 0
-  spawnPoint: {fileID: 707574061}
-  stocks: 3
---- !u!114 &579383097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579383094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76e3e749d1eac6a4fab9d2075927cd55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovementData: {fileID: 11400000, guid: 355d355015c59104d8458569465ea83e, type: 2}
-  InputData: {fileID: 11400000, guid: 311a508252d228f40b2beaf65ebdc5fb, type: 2}
-  PlayerControlsData: {fileID: 11400000, guid: 3da8b7a79eb998645bf4f5a9e1b87d0b, type: 2}
-  ControlLayoutData: {fileID: 11400000, guid: 9bde0ed4314f3844d899a84293904150, type: 2}
---- !u!114 &579383098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579383094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a77b92ce2aae74984d6ac57db3e7b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentKnockbackSpeed: {x: 0, y: 0}
---- !u!114 &579383099
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2815,11 +2732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562e0bf2be448a443aac1bfe74c42018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!114 &579383099
-=======
---- !u!114 &579383101
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2828,7 +2741,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 579383094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_Script: {fileID: 11500000, guid: 76e3e749d1eac6a4fab9d2075927cd55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -2836,11 +2748,6 @@ MonoBehaviour:
   InputData: {fileID: 11400000, guid: 311a508252d228f40b2beaf65ebdc5fb, type: 2}
   PlayerControlsData: {fileID: 11400000, guid: 3da8b7a79eb998645bf4f5a9e1b87d0b, type: 2}
   ControlLayoutData: {fileID: 11400000, guid: 9bde0ed4314f3844d899a84293904150, type: 2}
-=======
-  m_Script: {fileID: 11500000, guid: 1bcaf8a84f7c6f948a3cbf3d4d6d125d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 --- !u!50 &579383102
 Rigidbody2D:
   serializedVersion: 4
@@ -2904,111 +2811,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!1 &689464903
-=======
---- !u!1 &672621773
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 672621777}
-  - component: {fileID: 672621776}
-  - component: {fileID: 672621775}
-  - component: {fileID: 672621774}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &672621774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672621773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &672621775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672621773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &672621776
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672621773}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &672621777
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672621773}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 252387650}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!1 &707574060
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3282,35 +3085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_StartState: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
-=======
---- !u!114 &930687745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930687742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797f0667d0b190544acb0781a26a4452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pd: {fileID: 252387651}
-  anim: {fileID: 0}
-  facingDir: 0
-  damage: 0
-  HurtboxLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  IsAttacking: 0
-  IsFacingRight: 0
-  CurrentAttackData: {fileID: 11400000, guid: a9cdcb13b024d654b81597dfdd10959b, type: 2}
-  MovelistData: {fileID: 11400000, guid: ad89f5d7e9a27ae40b948ee8f59b3886, type: 2}
-  AttackFrameCounter: 0
-  spawnPoint: {fileID: 707574061}
-  stocks: 3
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 --- !u!114 &930687746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3685,11 +3459,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!1 &1408956198
-=======
---- !u!1 &1307804197
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3697,7 +3467,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   - component: {fileID: 1408956199}
   - component: {fileID: 1408956202}
   - component: {fileID: 1408956201}
@@ -3803,11 +3572,6 @@ GameObject:
   - component: {fileID: 1483418145}
   - component: {fileID: 1483418147}
   - component: {fileID: 1483418146}
-=======
-  - component: {fileID: 1307804198}
-  - component: {fileID: 1307804200}
-  - component: {fileID: 1307804199}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_Layer: 5
   m_Name: Stock_3
   m_TagString: Untagged
@@ -3815,30 +3579,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!224 &1483418145
-=======
---- !u!224 &1307804198
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1483418144}
-=======
-  m_GameObject: {fileID: 1307804197}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_Father: {fileID: 1408956199}
-=======
-  m_Father: {fileID: 252387650}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3846,7 +3598,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 14.6391}
   m_SizeDelta: {x: 10.2193, y: 10.1215}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!114 &1483418146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3923,19 +3674,12 @@ RectTransform:
   m_SizeDelta: {x: 10.2193, y: 10.1215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540002341
-=======
---- !u!114 &1307804199
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1540002339}
-=======
-  m_GameObject: {fileID: 1307804197}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -3959,25 +3703,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!222 &1540002342
-=======
---- !u!222 &1307804200
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1540002339}
   m_CullTransparentMesh: 1
 --- !u!1 &1541739944
-=======
-  m_GameObject: {fileID: 1307804197}
-  m_CullTransparentMesh: 1
---- !u!1 &1445543523
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3985,44 +3719,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   - component: {fileID: 1541739945}
   - component: {fileID: 1541739947}
   - component: {fileID: 1541739946}
   m_Layer: 5
   m_Name: Stock_4
-=======
-  - component: {fileID: 1445543524}
-  - component: {fileID: 1445543526}
-  - component: {fileID: 1445543525}
-  m_Layer: 5
-  m_Name: Damage Text
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!224 &1541739945
-=======
---- !u!224 &1445543524
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1541739944}
-=======
-  m_GameObject: {fileID: 1445543523}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_Father: {fileID: 1408956199}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4032,23 +3749,11 @@ RectTransform:
   m_SizeDelta: {x: 10.2193, y: 10.1215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541739946
-=======
-  m_Father: {fileID: 252387650}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1, y: -17.4}
-  m_SizeDelta: {x: 104.0882, y: 44.4666}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1445543525
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1541739944}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4057,23 +3762,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.006289184, b: 0.006289184, a: 1}
-=======
-  m_GameObject: {fileID: 1445543523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -4085,88 +3779,12 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1541739947
-=======
-  m_text: 100.1%
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1445543526
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1541739944}
-=======
-  m_GameObject: {fileID: 1445543523}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_CullTransparentMesh: 1
 --- !u!1 &1656197267
 GameObject:
@@ -4225,11 +3843,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!1 &1714143607
-=======
---- !u!1 &1702062449
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4237,44 +3851,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   - component: {fileID: 1714143608}
   - component: {fileID: 1714143610}
   - component: {fileID: 1714143609}
   m_Layer: 5
   m_Name: Stock_2
-=======
-  - component: {fileID: 1702062450}
-  - component: {fileID: 1702062452}
-  - component: {fileID: 1702062451}
-  m_Layer: 5
-  m_Name: Stock_4
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!224 &1714143608
-=======
---- !u!224 &1702062450
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1714143607}
-=======
-  m_GameObject: {fileID: 1702062449}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_Father: {fileID: 1408956199}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4284,27 +3881,12 @@ RectTransform:
   m_SizeDelta: {x: 10.2193, y: 10.1215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714143609
-=======
-  m_Father: {fileID: 252387650}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 14.6391}
-  m_SizeDelta: {x: 10.2193, y: 10.1215}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1702062451
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1714143607}
-=======
-  m_GameObject: {fileID: 1702062449}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -4328,21 +3910,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
 --- !u!222 &1714143610
-=======
---- !u!222 &1702062452
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Nittany Arena/Assets/Scenes/HitboxTestingZone.unity
   m_GameObject: {fileID: 1714143607}
-=======
-  m_GameObject: {fileID: 1702062449}
->>>>>>> origin/ian-current-development:UnityProject/Assets/Scenes/HitboxTestingZone.unity
   m_CullTransparentMesh: 1
 --- !u!1 &1741250460
 GameObject:
