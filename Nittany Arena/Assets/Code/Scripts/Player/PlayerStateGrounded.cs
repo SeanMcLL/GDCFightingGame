@@ -32,11 +32,11 @@ public class PlayerStateGrounded : BaseState
         if (controlsData.CurrentFrame.Jump && !controlsData.PreviousFrame.Jump)
             StateManager.ChangeState(StateFactory.JumpSquatState);
 
-        if (controlsData.CurrentFrame.Attack && !controlsData.PreviousFrame.Attack)
-            StateManager.ChangeState(StateFactory.DefaultAttackState);
-
         if (!m_Controller.isGrounded)
             StateManager.ChangeState(StateFactory.FallState);
+
+        if (controlsData.CurrentFrame.Attack && !controlsData.PreviousFrame.Attack)
+            StateManager.ChangeState(StateFactory.DefaultAttackState);
 
         float targetSpeed = controlsData.CurrentFrame.Movement.x * m_PlayerData.MovementData.WalkSpeed;
         m_Velocity.x = CalculateVelocity(targetSpeed, m_Velocity.x, m_PlayerData.MovementData.Friction);

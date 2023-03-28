@@ -71,13 +71,12 @@ public class StateMachine : MonoBehaviour
     //TODO: Add arguments
     public void TakeDamage()
     {
-        Debug.Log(gameObject.name + " took damage");
-
         //Add damage
 
         //Calculate knockback
 
         //Change to knockback state
-        m_PlayerStateFactory.KnockbackState.SetKnockback(Vector2.one * 5.0f);
+        m_PlayerStateFactory.KnockbackState.SetKnockback(Vector2.one * 10.0f);
+        ChangeState(m_PlayerStateFactory.KnockbackState);
     }
 }

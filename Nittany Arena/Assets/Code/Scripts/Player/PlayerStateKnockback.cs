@@ -1,12 +1,12 @@
 ﻿using Prime31;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 
 public class PlayerKnockbackState : BaseState
 {
     private float m_HitstunTime = 0.0f;
     private Vector2 m_KnockbackVelocity = Vector2.zero;
-    private Vector2 m_GravityVelocity = Vector2.zero;
     private float m_InitialKnockbackSpeed;
 
     private CharacterController2D m_Controller;
@@ -21,12 +21,12 @@ public class PlayerKnockbackState : BaseState
     public void SetKnockback(Vector2 knockback)
     {
         m_KnockbackVelocity = knockback;
-        m_InitialKnockbackSpeed = m_KnockbackVelocity.magnitude;
+        m_InitialKnockbackSpeed = m_KnockbackVelocity.x;
+        m_HitstunTime = 1.0f;
     }
 
     public override void OnEnter()
     {
-        m_GravityVelocity = Vector2.zero;
         m_InitialKnockbackSpeed = m_KnockbackVelocity.magnitude;
     }
 
@@ -48,10 +48,11 @@ public class PlayerKnockbackState : BaseState
         }
 
         //TODO: Use weight to calculate knockback speed and how fast the knockback approaches zero
-        m_GravityVelocity.y += Physics2D.gravity.y * Time.fixedDeltaTime * m_PlayerData.MovementData.GravityScale;
+        m_KnockbackVelocity.x = Mathf.MoveTowards(m_KnockbackVelocity.x, 0.0f, m_InitialKnockbackSpeed * Time.fixedDeltaTime);
+        m_KnockbackVelocity.y += Physics2D.gravity.y * m_PlayerData.MovementData.GravityScale * Time.fixedDeltaTime;
 
-        m_KnockbackVelocity = Vector2.MoveTowards(m_KnockbackVelocity, Vector2.zero, m_InitialKnockbackSpeed * Time.fixedDeltaTime);
+        m_HitstunTime -= Time.fixedDeltaTime;
 
-        m_Controller.move(m_GravityVelocity + m_KnockbackVelocity);
+        m_Controller.move(m_KnockbackVelocity * Time.fixedDeltaTime);
     }
 }

@@ -35,12 +35,12 @@ public class PlayerStateDefaultAttackState : BaseState
             StateManager.ChangeState(StateFactory.PreviousState);
 
         Collider2D[] collided = Physics2D.OverlapBoxAll(transform.position, Vector2.one * 3.0f, 0.0f, m_HurtboxLayerMask);
-        
+
         foreach (Collider2D collider in collided)
         {
             GameObject parent = collider.transform.parent.gameObject;
 
-            if (!parent.TryGetComponent<StateMachine>(out StateMachine stateMachine))
+            if (!parent.TryGetComponent(out StateMachine stateMachine))
                 continue;
 
             if (parent == gameObject)
