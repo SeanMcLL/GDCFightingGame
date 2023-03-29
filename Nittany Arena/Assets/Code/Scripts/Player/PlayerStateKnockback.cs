@@ -51,6 +51,9 @@ public class PlayerKnockbackState : BaseState
         m_KnockbackVelocity.x = Mathf.MoveTowards(m_KnockbackVelocity.x, 0.0f, m_InitialKnockbackSpeed * Time.fixedDeltaTime);
         m_KnockbackVelocity.y += Physics2D.gravity.y * m_PlayerData.MovementData.GravityScale * Time.fixedDeltaTime;
 
+        if (m_Controller.isGrounded)
+            m_KnockbackVelocity.y = Mathf.Max(0.0f, m_KnockbackVelocity.y);
+
         m_HitstunTime -= Time.fixedDeltaTime;
 
         m_Controller.move(m_KnockbackVelocity * Time.fixedDeltaTime);

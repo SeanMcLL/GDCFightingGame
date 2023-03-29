@@ -51,8 +51,11 @@ public class PlayerStateDefaultAttackState : BaseState
 
             m_MarkedPlayers.Add(parent);
 
+            bool right = transform.position.x <= parent.transform.position.x;
+            float directionModifier = right ? 1.0f : -1.0f;
+
             //TODO: Apply damage and knockback
-            stateMachine.TakeDamage();
+            stateMachine.TakeDamage(new Vector2(directionModifier, 0.5f), 7.5f, 0.5f);
         }
 
         m_Controller.move(m_Velocity * Time.fixedDeltaTime);

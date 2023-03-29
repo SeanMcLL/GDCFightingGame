@@ -36,11 +36,13 @@ public class StateMachine : MonoBehaviour
     private PlayerStateFactory m_PlayerStateFactory = null;
 
     [SerializeField] private BaseState m_StartState;
+    [SerializeField] private Player m_Player;
 
     private void Awake()
     {
         m_PlayerStateFactory = GetComponent<PlayerStateFactory>();
         m_CurrentState = m_StartState;
+        m_Player.damagePercent = 0.0f;
     }
 
     private void Start()
@@ -69,14 +71,15 @@ public class StateMachine : MonoBehaviour
     }
 
     //TODO: Add arguments
-    public void TakeDamage()
+    public void TakeDamage(Vector2 baseDirection, float baseKnockback, float knockbackGrowth)
     {
-        //Add damage
-
         //Calculate knockback
+        m_PlayerStateFactory.KnockbackState.SetKnockback(baseDirection.normalized * (baseKnockback + knockbackGrowth * m_Player.damagePercent));
+
+        //Add damage
+        m_Player.damagePercent += 5.0f;
 
         //Change to knockback state
-        m_PlayerStateFactory.KnockbackState.SetKnockback(Vector2.one * 10.0f);
         ChangeState(m_PlayerStateFactory.KnockbackState);
     }
 }
