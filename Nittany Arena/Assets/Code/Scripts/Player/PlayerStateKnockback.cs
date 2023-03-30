@@ -1,7 +1,5 @@
 ﻿using Prime31;
 using UnityEngine;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
 
 public class PlayerKnockbackState : BaseState
 {

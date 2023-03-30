@@ -34,11 +34,8 @@ public class PanelDisplay : MonoBehaviour
         stockArray[3] = Stock_4;
 
         nameText.SetText(player.playerName);
-        //damageText.SetText(string.Format("{0:F1}%", player.damagePercent));
+        damageText.SetText(string.Format("{0:F1}%", player.damagePercent));
         stocks = player.stocks;
-
-
-        
     }
 
     // Update is called once per frame
