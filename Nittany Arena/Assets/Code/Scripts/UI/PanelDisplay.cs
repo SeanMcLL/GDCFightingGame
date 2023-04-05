@@ -8,8 +8,8 @@ public class PanelDisplay : MonoBehaviour
 {
     public Player player;
 
-    public TMP_Text nameText;
-    public TMP_Text damageText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI damageText;
     public int stocks;
 
     public Image Stock_1;
@@ -23,10 +23,12 @@ public class PanelDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         Stock_1 = GameObject.Find("Stock_1").GetComponent<Image>();
         Stock_2 = GameObject.Find("Stock_2").GetComponent<Image>();
         Stock_3 = GameObject.Find("Stock_3").GetComponent<Image>();
         Stock_4 = GameObject.Find("Stock_4").GetComponent<Image>();
+        */
 
         stockArray[0] = Stock_1;
         stockArray[1] = Stock_2;
@@ -34,7 +36,7 @@ public class PanelDisplay : MonoBehaviour
         stockArray[3] = Stock_4;
 
         nameText.SetText(player.playerName);
-        damageText.SetText(string.Format("{0:F1}%", player.damagePercent));
+        
         stocks = player.stocks;
     }
 
@@ -50,6 +52,13 @@ public class PanelDisplay : MonoBehaviour
 
         //Stock_1.enabled = false;
         
+        if (stocks != player.stocks)
+        {
+            stocks = player.stocks;
+            stockArray[stocks].enabled = false;
+        }
+
+        damageText.text = string.Format("{0:F1}%", player.damagePercent);
     }
 
     // function to remove stock from UI pannel when player dies
