@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24be135b0385da4f8720c9d32aa4f6a, type: 3}
   m_Name: Player 1
   m_EditorClassIdentifier: 
-  playerName: Mario
+  playerName: Fedora Man
   damagePercent: 0
   stocks: 4

@@ -51,7 +51,7 @@ public class PlayerStateDefaultAttackState : BaseState
 
             m_MarkedPlayers.Add(parent);
 
-            bool right = transform.position.x <= parent.transform.position.x;
+            bool right = transform.position.x <= collider.transform.position.x;
             float directionModifier = right ? 1.0f : -1.0f;
 
             //TODO: Apply damage and knockback
