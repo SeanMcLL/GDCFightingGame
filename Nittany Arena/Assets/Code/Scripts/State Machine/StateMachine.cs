@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using Prime31;
+using UnityEngine.SceneManagement;
 
 public class StateMachine : MonoBehaviour
 {
+    public bool gameOver;
     private class ChangeStateCommand
     {
         private StateMachine m_StateMachine;
@@ -53,6 +55,7 @@ public class StateMachine : MonoBehaviour
 
     private void Start()
     {
+        gameOver = false;
         m_Controller.onTriggerExitEvent += OnColliderTriggerExit;
 
         m_CurrentState = m_PlayerStateFactory.GroundedState;
@@ -63,6 +66,7 @@ public class StateMachine : MonoBehaviour
             m_CurrentState.StateManager = this;
             m_CurrentState.OnEnter();
         }
+        //Debug.Log("gameOver = " + gameOver);
     }
 
     private void OnColliderTriggerExit(Collider2D obj)
@@ -91,6 +95,11 @@ public class StateMachine : MonoBehaviour
 
         m_ChangeState?.Execute();
         m_ChangeState = null;
+
+        if (gameOver == true && Input.GetKeyDown(KeyCode.JoystickButton0))
+        {
+            ReloadScene();
+        }
     }
 
     public void ChangeState(BaseState state)
@@ -110,4 +119,15 @@ public class StateMachine : MonoBehaviour
         //Change to knockback state
         ChangeState(m_PlayerStateFactory.KnockbackState);
     }
+
+     public void ReloadScene() {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void GameOver(){
+        gameOver = true;
+    }
+
+    
 }
