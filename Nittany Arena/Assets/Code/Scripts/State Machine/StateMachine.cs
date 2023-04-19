@@ -1,10 +1,15 @@
-﻿using UnityEngine;
-using Prime31;
+﻿using Prime31;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class StateMachine : MonoBehaviour
 {
+    GameManager gameManager;
     private class ChangeStateCommand
+    
     {
+        
         private StateMachine m_StateMachine;
         private PlayerStateFactory m_StateFactory;
         private BaseState m_NewState;
@@ -37,6 +42,7 @@ public class StateMachine : MonoBehaviour
     private PlayerStateFactory m_PlayerStateFactory = null;
     private CharacterController2D m_Controller;
 
+    [SerializeField] private InputData m_inputData;
     [SerializeField] private BaseState m_StartState;
     [SerializeField] private Player m_Player;
     [SerializeField] private Transform m_SpawnPoint;
@@ -54,6 +60,10 @@ public class StateMachine : MonoBehaviour
 
     private void Start()
     {
+        //TODO: get player count reference proper
+        //m_PlayerCount = inputMatcher.m_PlayerCount;
+        gameManager = GameManager.Instance;
+
         m_Controller.onTriggerExitEvent += OnColliderTriggerExit;
 
         m_CurrentState = m_PlayerStateFactory.GroundedState;
@@ -76,7 +86,10 @@ public class StateMachine : MonoBehaviour
 
             if (m_Player.stocks == 0)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                //GameData.DisablePlayer();
+                gameManager.PlayerDefeated();
+
                 return;
             }
 
@@ -94,6 +107,11 @@ public class StateMachine : MonoBehaviour
 
         m_ChangeState?.Execute();
         m_ChangeState = null;
+        if (gameManager.gameOver && m_inputData.CurrentFrame.ButtonSouth)
+        {
+            Debug.Log("button was pressed");
+            gameManager.ReloadScene();
+        }
     }
 
     public void ChangeState(BaseState state)
