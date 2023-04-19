@@ -12,7 +12,8 @@ public class GameData : ScriptableObject
     //public bool player4Active;
 
     // function called by state machine when player runs out of lives
-    public void DisablePlayer(){
+    public void DisablePlayer()
+    {
 
     }
 
