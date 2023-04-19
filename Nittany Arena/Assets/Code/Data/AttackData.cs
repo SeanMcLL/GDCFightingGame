@@ -14,6 +14,7 @@ public struct HitboxData {
     public Vector2 Center;
     public float Rotation;
     //Hitbox Effect Data
+    public bool Multihit;
     public float Damage;
     public Vector2 KnockbackDirection;
     public float BaseKnockback;

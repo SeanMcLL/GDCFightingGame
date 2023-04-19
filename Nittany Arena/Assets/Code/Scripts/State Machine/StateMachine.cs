@@ -40,6 +40,7 @@ public class StateMachine : MonoBehaviour
     [SerializeField] private BaseState m_StartState;
     [SerializeField] private Player m_Player;
     [SerializeField] private Transform m_SpawnPoint;
+    [SerializeField] private AttackData m_BasicAttack;
 
     private void Awake()
     {
@@ -63,6 +64,8 @@ public class StateMachine : MonoBehaviour
             m_CurrentState.StateManager = this;
             m_CurrentState.OnEnter();
         }
+
+        m_PlayerStateFactory.DefaultAttackState.CurrentAttack = m_BasicAttack;
     }
 
     private void OnColliderTriggerExit(Collider2D obj)
@@ -99,13 +102,13 @@ public class StateMachine : MonoBehaviour
     }
 
     //TODO: Add arguments
-    public void TakeDamage(Vector2 baseDirection, float baseKnockback, float knockbackGrowth)
+    public void TakeDamage(float damage, Vector2 baseDirection, float baseKnockback, float knockbackGrowth)
     {
         //Calculate knockback
-        m_PlayerStateFactory.KnockbackState.SetKnockback(baseDirection.normalized * (baseKnockback + knockbackGrowth * m_Player.damagePercent));
+        m_PlayerStateFactory.KnockbackState.SetKnockback(baseDirection.normalized * (baseKnockback + 0.12f * knockbackGrowth * m_Player.damagePercent));
 
         //Add damage
-        m_Player.damagePercent += 5.0f;
+        m_Player.damagePercent += damage;
 
         //Change to knockback state
         ChangeState(m_PlayerStateFactory.KnockbackState);

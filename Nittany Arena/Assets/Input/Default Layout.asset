@@ -16,6 +16,6 @@ MonoBehaviour:
   RightStick: 0
   ButtonNorth: 1
   ButtonEast: 2
-  ButtonSouth: 0
+  ButtonSouth: 3
   ButtonWest: 1
   StickSmashSensitivity: 0.5
