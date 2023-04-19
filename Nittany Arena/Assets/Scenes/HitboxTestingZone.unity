@@ -2230,7 +2230,41 @@ MonoBehaviour:
     m_RotationOrder: 4
   totalHorizontalRays: 8
   totalVerticalRays: 8
+<<<<<<< Updated upstream
 --- !u!114 &579383100
+=======
+--- !u!114 &579383096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579383094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e899a403528714eae5b42c8a7b1b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: 0
+  m_inputData: {fileID: 11400000, guid: 311a508252d228f40b2beaf65ebdc5fb, type: 2}
+  m_StartState: {fileID: 0}
+  m_Player: {fileID: 11400000, guid: 339625f9f23a21648b10b1630f5ef353, type: 2}
+  m_SpawnPoint: {fileID: 707574061}
+--- !u!114 &579383097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579383094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcaf8a84f7c6f948a3cbf3d4d6d125d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Player: {fileID: 11400000, guid: 339625f9f23a21648b10b1630f5ef353, type: 2}
+--- !u!114 &579383098
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2476,6 +2510,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e899a403528714eae5b42c8a7b1b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  gameOver: 0
+  m_inputData: {fileID: 11400000, guid: aa140ba80782f9a489786555f4eca130, type: 2}
+>>>>>>> Stashed changes
   m_StartState: {fileID: 0}
 --- !u!114 &930687745
 MonoBehaviour:
