@@ -41,8 +41,8 @@ public class StateMachine : MonoBehaviour
     private ChangeStateCommand m_ChangeState = null;
     private PlayerStateFactory m_PlayerStateFactory = null;
     private CharacterController2D m_Controller;
+    private PlayerData m_Data;
 
-    [SerializeField] private InputData m_inputData;
     [SerializeField] private BaseState m_StartState;
     [SerializeField] private Player m_Player;
     [SerializeField] private Transform m_SpawnPoint;
@@ -56,6 +56,8 @@ public class StateMachine : MonoBehaviour
         m_Player.stocks = 4;
 
         m_Controller = GetComponent<CharacterController2D>();
+
+        m_Data = GetComponent<PlayerData>();
     }
 
     private void Start()
@@ -107,11 +109,8 @@ public class StateMachine : MonoBehaviour
 
         m_ChangeState?.Execute();
         m_ChangeState = null;
-        if (gameManager.gameOver && m_inputData.CurrentFrame.ButtonSouth)
-        {
-            Debug.Log("button was pressed");
+        if (gameManager.gameOver && m_Data.InputData.CurrentFrame.ButtonSouth)
             gameManager.ReloadScene();
-        }
     }
 
     public void ChangeState(BaseState state)

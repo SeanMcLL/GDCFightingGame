@@ -45,9 +45,7 @@ public class GameManager : MonoBehaviour
 
     public void ReloadScene() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single); // Load the persistent scene asynchronously
-        SceneManager.LoadScene("HitboxTestingZone", LoadSceneMode.Additive); // Load the new scene additively
+        SceneManager.UnloadSceneAsync("HitboxTestingZone Aryan");
+        SceneManager.LoadScene("HitboxTestingZone Aryan", LoadSceneMode.Additive); // Load the new scene additively
     }
-
-    
 }
