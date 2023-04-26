@@ -6,15 +6,15 @@ using UnityEngine;
 
 public class StartMenu : MonoBehaviour
 {
-    [SerializeField] private InputData m_inputData;
     
+
     // Update is called once per frame
     void Update()
     {
-        if (m_inputData.CurrentFrame.ButtonSouth)
+        foreach (InputData inputData in InputMatcher.Instance.InputDataRefs)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single); // Load the persistent scene asynchronously
-            SceneManager.LoadScene("Sean Dev Scene", LoadSceneMode.Additive); // Load the new scene additively
+            if (inputData.CurrentFrame.Start)
+                SceneLoader.Instance.LoadScene("Sean Dev Scene");
         }
     }
 }
