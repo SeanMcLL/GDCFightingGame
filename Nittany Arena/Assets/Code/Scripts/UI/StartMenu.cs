@@ -14,7 +14,7 @@ public class StartMenu : MonoBehaviour
         if (m_inputData.CurrentFrame.ButtonSouth)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single); // Load the persistent scene asynchronously
-            SceneManager.LoadScene("HitboxTestingZone", LoadSceneMode.Additive); // Load the new scene additively
+            SceneManager.LoadScene("Sean Dev Scene", LoadSceneMode.Additive); // Load the new scene additively
         }
     }
 }

@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     public void ReloadScene() 
     {
-        SceneManager.UnloadSceneAsync("HitboxTestingZone Aryan");
-        SceneManager.LoadScene("HitboxTestingZone Aryan", LoadSceneMode.Additive); // Load the new scene additively
+        SceneManager.UnloadSceneAsync("Sean Dev Scene");
+        SceneManager.LoadScene("Sean Dev Scene", LoadSceneMode.Additive); // Load the new scene additively
     }
 }
