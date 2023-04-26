@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Prime31;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,19 +29,8 @@ public class GameManager : MonoBehaviour
         PlayerCount--;
 
         if (PlayerCount == 1)
-        {
-            GameOver();
-        }
+            gameOver = true;
     }
 
-    public void GameOver(){
-        gameOver = true;
-        Debug.Log("gameOver state = " + gameOver);
-    }
-
-    public void ReloadScene() 
-    {
-        SceneManager.UnloadSceneAsync("HitboxTestingZone Aryan");
-        SceneManager.LoadScene("HitboxTestingZone Aryan", LoadSceneMode.Additive); // Load the new scene additively
-    }
+    public void ReloadScene() => SceneLoader.Instance.ReloadScene();
 }
