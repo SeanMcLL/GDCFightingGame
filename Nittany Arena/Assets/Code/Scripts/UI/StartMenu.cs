@@ -6,10 +6,7 @@ using UnityEngine;
 
 public class StartMenu : MonoBehaviour
 {
-    
-
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         foreach (InputData inputData in InputMatcher.Instance.InputDataRefs)
         {
