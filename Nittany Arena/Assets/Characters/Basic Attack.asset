@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Basic Attack
   m_EditorClassIdentifier: 
   StartupFrames: 5
-  TotalFrames: 28
+  TotalFrames: 20
   Frames:
   - Hitboxes:
     - Shape: 1

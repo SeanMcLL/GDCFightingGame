@@ -32,5 +32,10 @@ public class GameManager : MonoBehaviour
             gameOver = true;
     }
 
-    public void ReloadScene() => SceneLoader.Instance.ReloadScene();
+    public void ReloadScene()
+    {
+        gameOver = false;
+        PlayerCount = 2;
+        SceneLoader.Instance.ReloadScene();
+    }
 }

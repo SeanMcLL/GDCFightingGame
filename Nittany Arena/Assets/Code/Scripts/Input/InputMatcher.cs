@@ -6,6 +6,8 @@ public class InputMatcher : MonoBehaviour
 
     [SerializeField] private InputData[] m_InputDataRefs;
 
+    public InputData[] InputDataRefs => m_InputDataRefs;
+
     public static InputMatcher Instance { get; private set; }
 
     private void Awake() 

@@ -23,7 +23,6 @@ public class SceneLoader : MonoBehaviour
     private void Start()
     {
         m_CurrentScene = SceneManager.GetSceneAt(1);
-        Debug.Log(m_CurrentScene.name + " " + m_CurrentScene.IsValid());
     }
 
     public void ReloadScene()

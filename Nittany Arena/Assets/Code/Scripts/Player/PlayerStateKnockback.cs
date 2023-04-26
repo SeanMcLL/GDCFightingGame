@@ -20,7 +20,7 @@ public class PlayerKnockbackState : BaseState
     {
         m_KnockbackVelocity = knockback;
         m_InitialKnockbackSpeed = m_KnockbackVelocity.x;
-        m_HitstunTime = 1.0f;
+        m_HitstunTime = 0.25f;
     }
 
     public override void OnEnter()
